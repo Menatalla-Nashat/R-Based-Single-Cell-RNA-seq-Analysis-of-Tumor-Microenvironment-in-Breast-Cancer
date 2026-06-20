@@ -16,10 +16,10 @@ To understand the communication pattern and biological functions of different CA
 2.2. Set the working directory to the project folder.
 
 2.3. Make sure the following input files are available in the project directory:
-   - matrix.mtx
+   - matrix.mtx (I could'nt attatch it due to its large size)
    - barcodes.tsv
    - genes.tsv
-   - metadata.csv
+   - metadata.csv (I could'nt attatch it due to its large size)
 
 2.4. Install the required R packages:
 
