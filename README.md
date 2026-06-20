@@ -76,11 +76,15 @@ The data consists of:
 - A genes/features file
 - Annotations related to metadata
 
+---
+
 The input files needed to run the analysis are:
 - matrix.mtx
 - barcodes.tsv
 - genes.tsv
 - metadata.csv
+
+---
 
 This data contains ~100,064 cells from 26 primary breast tumors, including:
 - ER+
@@ -102,33 +106,38 @@ Quality Control Parameters
 - Max detected genes per cell: nFeature_RNA < 6000
 - Max mitochondrial percentage: percent.mt < 10
 
+---
 
 Normalization Parameters
 - Normalization method: LogNormalize
 - Scale factor: 10000
 
+---
 
 Highly Variable Genes (HVGs)
 - Selection method: vst
 - Num of variable genes: 2000
 
-
+--
 
 PCA and Dim Reduction
 - PCA dimensions used: 1:30
 - UMAP dimensions used: 1:30
 - Random seed: 42
 
+--
 
 Clustering Parameters
 - Main clustering resolution: 0.1
 - CAF reclustering resolution: 0.2
 
+--
 
 Differential Expression Parameters
 - Minimum percentage expression: min.pct = 0.25
 - Log fold-change threshold: logfc.threshold = 0.25
 
+---
 
 CellChat Parameters
 - Database used: CellChatDB.human
@@ -140,6 +149,7 @@ CellChat Parameters
  - matrixCAF
  - apCAF
 
+---
 
 Visualization Parameters
 - Output format: PNG
@@ -167,13 +177,13 @@ Included images:
 
 7. How to Reproduce the Work
 
-1. Download all dataset files and place in the root directory of the project.
+7.1. Download all dataset files and place in the root directory of the project.
 - matrix.mtx
 - barcodes.tsv
 - genes.tsv
 - metadata.csv
-2. Open the project in R Studio.
-3. Install all necessary R libraries:
+7.2. Open the project in R Studio.
+7.3. Install all necessary R libraries:
 - Seurat
 - Matrix
 - ggplot2
@@ -181,17 +191,17 @@ Included images:
 - dplyr
 - patchwork
 - CellChat
-4. Execute sequentially the preprocessing and clustering script:
+7.4. Execute sequentially the preprocessing and clustering script:
 - Quality control and filtering
 - Normalization
 - PCA and Harmony batch correction
 - UMAP clustering
 - Cell type annotation
 - Extract and recluster CAF populations
-5. Execute the CellChat analysis script:
+7.5. Execute the CellChat analysis script:
 - Inference of ligand-receptor interactions
 - Calculation of communication probabilities
 - Signaling pathway analysis
 - CellChat visualizations
-6. Output files and images will be saved into the respective results folders or the working directory automatically.
-7. Some representative output images are found within the screenshots folder.
+7.6. Output files and images will be saved into the respective results folders or the working directory automatically.
+7.7. Some representative output images are found within the screenshots folder.
