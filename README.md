@@ -182,7 +182,9 @@ Included images:
 - barcodes.tsv
 - genes.tsv
 - metadata.csv
+  
 7.2. Open the project in R Studio.
+
 7.3. Install all necessary R libraries:
 - Seurat
 - Matrix
