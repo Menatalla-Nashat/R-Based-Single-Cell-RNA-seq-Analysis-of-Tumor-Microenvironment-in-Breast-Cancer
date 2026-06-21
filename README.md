@@ -191,6 +191,7 @@ Included images:
 - dplyr
 - patchwork
 - CellChat
+  
 7.4. Execute sequentially the preprocessing and clustering script:
 - Quality control and filtering
 - Normalization
@@ -198,10 +199,13 @@ Included images:
 - UMAP clustering
 - Cell type annotation
 - Extract and recluster CAF populations
+  
 7.5. Execute the CellChat analysis script:
 - Inference of ligand-receptor interactions
 - Calculation of communication probabilities
 - Signaling pathway analysis
 - CellChat visualizations
+  
 7.6. Output files and images will be saved into the respective results folders or the working directory automatically.
+
 7.7. Some representative output images are found within the screenshots folder.
